@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile Page</title>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    img {
+      width: 175px;
+      height: 200px;
+      border-radius: 0%; /* Changed here */
+      border: 4px solid darkblue;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: green;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: darkblue;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hello-button {
+      margin-top: 20px;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Profile Page</h1>
+
+  <img src="C:\Users\Pooja Manik\Downloads\signituredayphoto.jpg" alt="Profile Photo">
+
+  <p>Hello! My name is <span class="highlight">Chouhan Rohitha</span>. I am currently pursuing Betech Final Year. My hobbies are doing yoga early in the morning, listening to music, and playing badminton.</p>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <button class="hello-button" onclick="sayHello()">Say Hello</button>
+
+  <script>
+    function sayHello() {
+      const userName = prompt("What is your name?");
+      if (userName) {
+        alert("Hello, " + userName + "!");
+      } else {
+        alert("Hello, guest!");
+      }
+    }
+  </script>
+
+</body>
+</html>
 
